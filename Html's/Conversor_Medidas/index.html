@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Conversor de Unidades</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="converter">
+    <h2>Conversor de Unidades</h2>
+    <label for="fromUnit">De:</label>
+    <select id="fromUnit">
+      <option value="cm">Centímetros (cm)</option>
+      <option value="m">Metros (m)</option>
+      <option value="km">Quilômetros (km)</option>
+      <option value="inch">Polegadas (inch)</option>
+      <option value="foot">Pés (foot)</option>
+    </select>
+    <input type="number" id="inputValue">
+    <label for="toUnit">Para:</label>
+    <select id="toUnit">
+      <option value="cm">Centímetros (cm)</option>
+      <option value="m">Metros (m)</option>
+      <option value="km">Quilômetros (km)</option>
+      <option value="inch">Polegadas (inch)</option>
+      <option value="foot">Pés (foot)</option>
+    </select>
+    <button onclick="convert()">Converter</button>
+    <p id="result"></p>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
